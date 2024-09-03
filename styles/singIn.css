@@ -4,6 +4,16 @@
     
 }
 /* ----------------------------------------------------------------------------------------------- */
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -141,4 +151,13 @@ input{
 
 .submit{
     cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color:  rgb(215, 215, 215);
 }
