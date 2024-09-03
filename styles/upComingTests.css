@@ -142,7 +142,6 @@ nav ul a{
 footer{
     display: flex;
     justify-content: center;
-    position: absolute;
     bottom: 0;
     align-items: center;
     width: 100%;
