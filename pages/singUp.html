@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/singUp.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="/img/book.png" alt="">
+                <a href="/index.html"><h1>UnStudy</h1>
+                </div>
+
+            <div class="navCenter">
+                <ul>
+                        <li><a href="">Simulacros</a></li>
+                        <li><a href="upComingTest.html">Proximos Parciales</a></li>
+                        <li><a href="">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+
+                
+            <div class="navRight">
+                <ul>
+                    <li><a class="loginBox" href="singIn.html">Iniciar Sesión</a></li>
+                    <li><a class="signBox" href="singUp.html">Registrarse</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+
+    </header>
+
+    <main id="formRegistro">
+        
+        <h2>Registrarse</h2>
+        <p>Crea una cuenta en UnStudy</p>
+        <form action="registrarse">
+            <br><br>
+            <label class="box">Nombre</label><br>
+            <input type="text" name="nombre" id="nombreFormRegistro" required placeholder="Escribe tu nombre"><br><br>
+
+            <label class="box">Correo electrónico</label><br>
+            <input type="email" name="email" id="emailFormRegistro" required placeholder="Escribe tu E-mail"><br><br>
+
+            <label class="box">Contraseña</label><br>
+            <input type="password" name="password" id="passwordFormRegistro" required placeholder="Escribe tu Contraseña"><br><br>
+            
+            <label class="box">Rol</label><br>
+
+            <div class="rol">
+                <div class="docente">
+                    <input type="radio" name="seleccion" id="rolDocenteFormRegistro" required >
+                    <label for="" class="radio1">Docente</label>
+                </div>
+                <div class="estudiante">
+                <input type="radio" name="seleccion" id="rolEstudianteFormRegistro" required>
+                <label for="" class="radio2">Estudiante</label>
+                </div>
+                <br><br><br>
+            </div>
+
+            <input type="submit" value="Registrarse" id="botonFormRegistro">
+            
+        </form>
+        
+    </main>
+
+    <footer>
+        <p>© 2024 UnStudy. Todos los derechos reservados.</p>
+
+    </footer>
+
+</body>
+</html>
