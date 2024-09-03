@@ -18,7 +18,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 70px;
-    border-bottom: 1px solid gainsboro
+    border-bottom: 1px solid gainsboro;
+    padding: 0px 200px
 
 }
 nav div  li a{
@@ -45,9 +46,15 @@ nav .logo a{
     align-items: center;
 }
 
+.navCenter{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 .navCenter ul{
     display: flex;
-    gap: 25px;
+    gap: 45px;
     
 
 }
