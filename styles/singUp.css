@@ -14,67 +14,6 @@ main{
     flex-grow: 1;
 }
 
-nav .logo a{
-    color: black;
-    text-decoration: none;
-}
-
-#formRegistro{
-    width: 500px;
-    height: 550px;
-    border-left: 1px solid rgb(206, 206, 206);
-    border-right: 1px solid rgb(206, 206, 206);
-    border-bottom: 1px solid rgb(206, 206, 206);
-    border-radius: 15px;
-    margin: auto;
-    padding: 40px;
-    margin-bottom: 65px;
-    margin-top: 60px;
-    box-shadow: 0px 0px 15px 0px rgb(206, 206, 206);
-}
-main h2{
-    font-family: "Inter", sans-serif;
-    font-size: 40px;
-}
-main form #nombreFormRegistro, #emailFormRegistro, #passwordFormRegistro, #botonFormRegistro{
-    width: 90%;
-    height: 40px;
-    border-radius: 8px;
-}
-#botonFormRegistro{
-    background-color: black;
-    color: white;
-    height: 35px;
-    border-radius: 10px;
-    transition: all 0.25s;
-    cursor: pointer;
-}
-#botonFormRegistro:hover{
-    background-color: rgb(70, 70, 70);
-    color: whitesmoke;
-}
-.rol{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 8px;
-}
-/****************************************************/
-*{
-    margin: 0px;
-    font-family: "Inter", sans-serif;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-main{
-    flex-grow: 1;
-}
-
 nav{
     display: flex;
     justify-content: space-around;
@@ -162,6 +101,55 @@ nav ul a{
 .signBox:hover{
     background-color: rgb(58, 58, 58);
 }
+
+
+nav .logo a{
+    color: black;
+    text-decoration: none;
+}
+
+#formRegistro{
+    width: 500px;
+    height: 550px;
+    border-left: 1px solid rgb(206, 206, 206);
+    border-right: 1px solid rgb(206, 206, 206);
+    border-bottom: 1px solid rgb(206, 206, 206);
+    border-radius: 15px;
+    margin: auto;
+    padding: 40px;
+    margin-bottom: 65px;
+    margin-top: 60px;
+    box-shadow: 0px 0px 15px 0px rgb(206, 206, 206);
+}
+main h2{
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+}
+main form #nombreFormRegistro, #emailFormRegistro, #passwordFormRegistro, #botonFormRegistro{
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+}
+#botonFormRegistro{
+    background-color: black;
+    color: white;
+    height: 35px;
+    border-radius: 10px;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+#botonFormRegistro:hover{
+    background-color: rgb(70, 70, 70);
+    color: whitesmoke;
+}
+.rol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 8px;
+}
+/****************************************************/
+
 
 
 
