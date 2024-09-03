@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <title>UnStudy</title>
+</head>
+
+<script defer src="//unpkg.com/mathlive"></script>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="./img/book.png" alt="">
+                <a href=""><h1>UnStudy</h1>
+            </div>
+
+            <div class="navCenter">
+                <ul>
+                        <li><a href="">Simulacros</a></li>
+                        <li><a href="">Proximos Parciales</a></li>
+                        <li><a href="">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+
+                
+            <div class="navRight">
+                <ul>
+                    <li><a class="loginBox" href="">Iniciar Sesión</a></li>
+                    <li><a class="signBox" href="">Registrarse</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="mainText">
+            <h1>Subir Pregunta</h1>
+        </div>
+
+        <div class="uploadContainer">
+            <div class="uploadQuestion">
+                <textarea class="formTitle" placeholder="Formulario sin título" name="" id=""></textarea>
+                <textarea class="formDescription" placeholder="Descripción del formulario" name="" id=""></textarea>
+
+            </div>
+            <div class="formbuttons">
+                <div class="mathInput">
+                    <math-field math-virtual-keyboard-policy="sandboxed"></math-field>
+
+
+                </div>
+            </div>
+        </div>
+
+         <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+         
+         <math-field id="mathfield" math-virtual-keyboard-policy="auto"></math-field>
+         <div id="output" style="border: 1px solid #ccc; padding: 10px; min-height: 50px;"></div>
+       
+         <script>
+           // Obtener referencias a los elementos mathfield y output
+           const mathfield = document.getElementById('mathfield');
+           const output = document.getElementById('output');
+       
+           // Escuchar el evento 'input' en el mathfield
+           mathfield.addEventListener('input', () => {
+             // Obtener el contenido LaTeX del mathfield
+             const latex = mathfield.getValue();
+             
+             // Renderizar el contenido matemático dentro del div de output
+             output.innerHTML = `\\(${latex}\\)`;  // Envolver el código LaTeX en delimitadores de ecuación
+             
+             // Actualizar MathJax para renderizar las ecuaciones
+             MathJax.typesetPromise([output]);
+           });
+         </script>
+        
+    </main>
+
+</body>
+</html>
