@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles/uploadQuestions.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    <script src="https://unpkg.com/mathlive"></script>
+
     <title>UnStudy</title>
+    
 </head>
 
-<script defer src="//unpkg.com/mathlive"></script>
+
+
 
 <body>
     <header>
@@ -48,27 +56,46 @@
             <h1>Subir Pregunta</h1>
         </div>
 
-        <div class="uploadContainer">
+        <div class="questionInfo">
             <div class="uploadQuestion">
                 <textarea class="formTitle" placeholder="Formulario sin título" name="" id=""></textarea>
                 <textarea class="formDescription" placeholder="Descripción del formulario" name="" id=""></textarea>
 
             </div>
-            <div class="formbuttons">
-                <div class="mathInput">
-                    <math-field math-virtual-keyboard-policy="sandboxed"></math-field>
+        </div>
 
-
+        <div class="questionBody">
+            <div class="questionTitle">
+                <textarea class="formTitle" placeholder="Pregunta" name="" id=""></textarea>
+                <div  id="output" >
+                    <textarea name="" placeholder="Ingrese Formula matemática" style="border: none; text-align: center; pointer-events: none;" id=""></textarea>
                 </div>
+                <math-field id="mathfield" style="width: 50px; height:2%; color: transparent; border: none; caret-color: transparent;"></math-field>
+                
             </div>
         </div>
 
-         <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MathJax -->
+
+
+
          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
          <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-         
-         <math-field id="mathfield" math-virtual-keyboard-policy="auto"></math-field>
-         <div id="output" style="border: 1px solid #ccc; padding: 10px; min-height: 50px;"></div>
+
        
          <script>
            // Obtener referencias a los elementos mathfield y output
@@ -86,9 +113,13 @@
              // Actualizar MathJax para renderizar las ecuaciones
              MathJax.typesetPromise([output]);
            });
-         </script>
+         </script> 
         
     </main>
+
+    <footer>
+        <p>© 2024 UnStudy. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>

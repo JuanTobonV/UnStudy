@@ -1,107 +1,3 @@
-*{
-    margin: 0px;
-    font-family: "Inter", sans-serif;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-main{
-    flex-grow: 1;
-}
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 70px;
-    border-bottom: 1px solid gainsboro;
-    padding: 0px 200px
-
-}
-nav div  li a{
-    font-size: 15px;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-nav .logo a{
-    color: black;
-    text-decoration: none;
-}
-.navRight ul{
-    display: flex;
-    gap: 15px;
-    
-    
-}
-
-.navRight ul a{
-    display: flex;
-    align-items: center;
-}
-
-.navCenter{
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.navCenter ul{
-    display: flex;
-    gap: 45px;
-    
-
-}
-
-.loginBox{
-    border: 1px solid rgb(206, 206, 206);
-    border-radius: 6px;
-    padding: 8px;
-    transition: all 0.25s;
-
-}
-
-.signBox{
-    border: 1px solid rgb(206, 206, 206);
-    background-color: black;
-    color: white;
-    border-radius: 6px;
-    padding: 8px;
-    transition: all 0.25s;
-
-}
-
-
-header .logo img{
-    width: 55px;
-}
-
-nav ul{
-    list-style: none;
-    
-}
-
-nav ul a{
-    color: black;
-    text-decoration: none;
-    font-size: 25px;
-}
-
-.loginBox:hover{
-    background-color: rgb(206, 206, 206); ;
-}
-
-.signBox:hover{
-    background-color: rgb(58, 58, 58);
-}
-
-/*///////////////////////////////////////////////////////////////////////*/
 
 .mainText{
     display: flex;
@@ -109,13 +5,8 @@ nav ul a{
     margin-top: 60px
 }
 
-.uploadContainer{
-    display: flex;
-    justify-content: center;
-    
-}
 
-.uploadContainer{
+.questionInfo, .questionBody{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,18 +14,32 @@ nav ul a{
     gap: 20px;
 }
 
+.questionBody{
+    margin-top: 15px;
+}
+
 .uploadQuestion{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin-top: 20px;
     border-top: 15px solid gainsboro;
     width: 50%;
     padding: 20px;
-    border-left: 2px solid rgb(0, 37, 248);
     box-shadow: 0px 0px 15px 0px gainsboro;
 
 }
+.questionTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+    padding: 20px;
+    border-left: 5px solid blue;
+    box-shadow: 0px 0px 15px 0px gainsboro;
+}
+
+
+
 
 .formTitle, .formDescription{
     outline: none;
@@ -143,32 +48,35 @@ nav ul a{
 
 .formTitle{
     font-size: 25px;
-    margin-bottom: 10px;
 }
 
 textarea{
     width: 97%;
-    height: 20px;
+    height: 26px;
     border: none;
     border-bottom: 2px solid gainsboro;
     padding: 10px 0px 10px 0px;
     font-size: 15px;
     resize: none;
     text-wrap: wrap;
-
+    margin-bottom: 10px;
 }
 
-.uploadContainer .formButtons{
+.questionInfo .formButtons{
     display: flex;
     justify-content: space-between;
     width: 50%;
 }
 
-footer{
+.questionBody #output{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+    margin-top: 1px;
     height: 100px;
-    background-color:  rgb(215, 215, 215);
+    border: 1px solid gainsboro;
+}
+    
+#mathfield ::part(virtual-keyboard-toggle) {
+    caret-color: transparent; /* Hace el cursor invisible */
+    color: transparent; /* Si se desea también ocultar el color del texto */
 }
