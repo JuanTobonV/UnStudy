@@ -1,102 +1,173 @@
 *{
     margin: 0px;
-    font-family: "Inter", sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif !important;
+
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+a{
+    text-decoration: none;
+    color: black;
 }
 
-main{
-    flex-grow: 1;
-}
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 70px;
-    border-bottom: 1px solid gainsboro;
-    padding: 0px 200px
-
-}
-nav div  li a{
-    font-size: 15px;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-nav .logo a{
-    color: black;
+    padding: 20px;
     text-decoration: none;
+    background-color: #ececec;
 }
-.navRight ul{
+
+.tituloImagen{
     display: flex;
-    gap: 15px;
+    align-items: center !important;
+    gap: 10px;
+}
+
+.abrirMenu, .cerrarMenu, .linkHidden{
+    display: none;
+}
+
+
+.nav-list{
+    display: flex;
+    gap: 20px;
     
+}
+
+
+.login{
+    display: flex;
+    gap: 20px;
+}
+
+.login a{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 8px;
     
-}
-
-.navRight ul a{
-    display: flex;
-    align-items: center;
-}
-
-.navCenter{
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.navCenter ul{
-    display: flex;
-    gap: 45px;
-    
-
-}
-
-.loginBox{
-    border: 1px solid rgb(206, 206, 206);
-    border-radius: 6px;
-    padding: 8px;
-    transition: all 0.25s;
-
 }
 
 .signBox{
-    border: 1px solid rgb(206, 206, 206);
     background-color: black;
     color: white;
-    border-radius: 6px;
-    padding: 8px;
-    transition: all 0.25s;
-
+    transition: 0.2s;
 }
 
-
-header .logo img{
-    width: 55px;
-}
-
-nav ul{
-    list-style: none;
-    
-}
-
-nav ul a{
-    color: black;
-    text-decoration: none;
-    font-size: 25px;
+.loginBox{
+    transition: 0.2s;
 }
 
 .loginBox:hover{
-    background-color: rgb(206, 206, 206); ;
+    background-color: rgb(206, 206, 206); 
 }
 
 .signBox:hover{
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(81, 81, 81);
+}
+
+.nav-list a:hover{
+    border-bottom: 1px solid black ;
+}
+
+
+
+@media (width < 840px) {
+
+    nav{
+        justify-content: space-between;
+    }
+    .abrirMenu, .cerrarMenu, .linkHidden{
+        display: flex;
+        transition: all 0.1s;
+    }
+
+    .linkHidden{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 5px;
+        transition: all 0.1s;
+        background-color: #ececec;
+        color: #0E0E0E;
+    
+    }
+
+    .link{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 5px;
+        transition: all 0.1s;
+        background-color: #ececec;
+        color: #0E0E0E;
+
+    }
+    
+
+    .abrirMenu, .cerrarMenu{
+        font-size: 1.5rem;
+        border:0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .cerrarMenu{
+        color: #ececec;
+    }
+
+    .navigation, .login{
+        display: none;
+    }
+
+    .link:hover{
+        background-color: #ececec;
+        color: #0E0E0E;
+        
+        
+    }
+
+    .navigation.visible{
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.2s;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap:1rem;
+        position: absolute;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        background-color: #0E0E0E;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav-list a{
+        background-color: #0E0E0E;
+        color:white;
+    }
+
+    
 }
