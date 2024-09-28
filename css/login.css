@@ -1,0 +1,234 @@
+*{
+    margin: 0px;/* para quitar el espacio que trae por defecto y usar todo el espaco */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;/* para que quede el tipo de letra en todo el contenido del main */
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    background-color: #ececec;
+}
+
+.tituloImagen{
+    display: flex;
+    align-items: center !important;
+    gap: 10px;
+}
+
+.abrirMenu, .cerrarMenu, .linkHidden{
+    display: none;
+}
+
+
+.nav-list{
+    display: flex;
+    gap: 20px;
+    
+}
+
+
+.login{
+    display: flex;
+    gap: 20px;
+}
+
+.login a{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+
+.signBox{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.loginBox{
+    transition: 0.2s;
+}
+
+.loginBox:hover{
+    background-color: rgb(206, 206, 206); 
+}
+
+.signBox:hover{
+    background-color: rgb(81, 81, 81);
+}
+
+.nav-list a:hover{
+    border-bottom: 1px solid black ;
+}
+
+
+
+@media (width < 840px) {
+
+    nav{
+        justify-content: space-between;
+    }
+    .abrirMenu, .cerrarMenu, .linkHidden{
+        display: flex;
+        transition: all 0.1s;
+    }
+
+    .linkHidden{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 5px;
+        transition: all 0.1s;
+        background-color: #ececec;
+        color: #0E0E0E;
+    
+    }
+
+    .link{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 5px;
+        transition: all 0.1s;
+        background-color: #ececec;
+        color: #0E0E0E;
+
+    }
+    
+
+    .abrirMenu, .cerrarMenu{
+        font-size: 1.5rem;
+        border:0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .cerrarMenu{
+        color: #ececec;
+    }
+
+    .navigation, .login{
+        display: none;
+    }
+
+    .link:hover{
+        background-color: #ececec;
+        color: #0E0E0E;
+        
+        
+    }
+
+    .navigation.visible{
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.2s;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap:1rem;
+        position: absolute;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        background-color: #0E0E0E;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav-list a{
+        background-color: #0E0E0E;
+        color:white;
+    }
+
+    
+}
+/* --------------------------------------------------------------- */
+
+
+
+body{
+    height: 100vh;
+    /* para que ocupe el 100% del alto de la pantalla visible */
+}
+main{
+
+    
+    flex-grow: 1; /*para que ocupe todo el estacio disponible independientemente del dispositivo  */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form{
+    
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid rgb(206, 206, 206);
+    border-right: 1px solid rgb(206, 206, 206);
+    border-bottom: 1px solid rgb(206, 206, 206);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px rgb(206, 206, 206);
+    padding: 10px; /* para separarlo del borde  */
+}
+.registro {
+    text-align: center;
+}
+.registro a{
+    
+    text-decoration: none;
+}
+.registro a:hover{
+    
+    color: grey;
+    border-bottom: 1px solid black;
+   
+}
+/* -------------------------------------------------------------------------------------- */
+input{
+    height: 30px;
+}
+
+.submit{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color:  rgb(215, 215, 215);
+}
