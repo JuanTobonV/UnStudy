@@ -48,3 +48,9 @@
     transition: all 0.25s;
 }
 
+@media (width < 1145px) {
+    .cards{
+        flex-wrap: wrap;
+    }
+}
+
