@@ -4,6 +4,13 @@
 .flex{
     display: flex;
 }
+.wrap{
+    flex-wrap: wrap;
+}
+main{
+    flex-direction: column;
+    gap: 50px;
+}
 .hero{
     background: linear-gradient(90deg,#000000 10%,#989595 90%);
     height: 350px;
@@ -22,11 +29,11 @@
 }
 .texto_info_hero h1{
     width: 80%;
-    font-size: 50px;
+    font-size: 2rem;
     text-align: center;
 }
 .texto_info_hero p{
-    font-size: 18px;
+    font-size: 0.8rem;
     font-weight: normal;
 }
 
@@ -40,23 +47,20 @@
 }
 
 .materias{
+justify-content: center;
  width: 95%;
  margin: auto;
  gap: 10px;
- margin-top: 80px;
- margin-bottom: 50px;
- padding: 0 10px;
- justify-content: space-between; 
- padding-bottom: 55px;
 }
 
 .card_materias{
     flex-direction: column;
+    flex-grow: 1;
     gap: 12px;
     padding: 12px;
     box-shadow: 0 0 1px ;
     border-radius: 10px;
-    max-width: 445px;
+    width: 350px;
 }
 .contenedor_icon_materias{
     width: 50px;
@@ -77,10 +81,10 @@
 .examenes{
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 20px 10px;
     background:  rgb(215, 215, 215);
     justify-content: space-between;
-    padding: 8px 12px;
+    /* padding: 8px 12px; */
 }
 .examenes_titulo{
     margin-top: 40px;
@@ -90,9 +94,12 @@
 .examenes_cards{
     width: 95%;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 15px;
 }
 .examenes_card{
+    text-align: center;
+    flex-basis: 350px;
     flex-direction: column;
     gap: 12px;
     background: #ffffff;

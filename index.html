@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="/styles/Index.css">
+    <link rel="stylesheet" href="./styles/index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -22,7 +22,9 @@
         <nav >
             <div class="tituloImagen">
                 <img style="width: 45px; height: 45px" src="./img/book.png" alt="">
+
                 <h1><a href="/index.html">UnStudy</a></h1>
+
             </div>  
             
             <button id="abrir" class="abrirMenu"><i class="bi bi-list"></i></button>
@@ -37,6 +39,7 @@
                     <a class="link" href="">Sobre Nosotros</a>
                     <a href="./pages/singIn.html/" class="linkHidden link" >Iniciar Sesión</a>
                     <a href="./pages/singUp.html/" class="linkHidden link" >Registrarse</a>
+
                 
                 </div>
             </div>
@@ -50,7 +53,7 @@
         </nav>
     </header>
     
-    <main>
+    <main class="flex">
         <section class="hero flex">
             <div class="texto_info_hero flex">
                 <h1>Préparate para tus exámenes con UnStudy</h1>
@@ -59,7 +62,7 @@
             <button class="boton_hero">Empieza a practicar</button>
         </section>
 
-        <section class="materias flex">
+        <section class="materias flex wrap">
             <div class="card_materias flex">
                 <div class="contenedor_icon_materias">
                     <img src="img/calculator-svgrepo-com.svg" alt="" class="icon_card_materias">
@@ -90,13 +93,13 @@
 
         </section>
 
-        <section class="examenes flex">
+        <section class="examenes flex ">
             <div class="examenes_titulo">
                 <h1>Próximos Parciales</h1>
                 <p>consulta los próximos exámenes y comienza a prepararte hoy.</p>
             </div>
 
-           <div class="examenes_cards flex">
+           <div class="examenes_cards flex wrap">
 
              <div class="examenes_card flex">
                 <h1 class="card_examens_titulo">Matemáticas Discretas<h1>
@@ -116,7 +119,7 @@
                 </div>
             </div>
 
-            <div class="examenes_card flex">
+            <div class="examenes_card flex ">
                 <h1 class="card_examens_titulo">Matemáticas Discretas<h1>
                 <div class="card_examen_fecha">
                     Fecha 15 de Mayo de 2023
