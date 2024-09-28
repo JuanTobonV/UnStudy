@@ -232,3 +232,37 @@ footer{
     height: 100px;
     background-color:  rgb(215, 215, 215);
 }
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+@media (width < 200px) {
+body{
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+}
+main{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+form{
+    margin-top: 30px;
+    display: flex;
+    width: 175px;
+    height: 100px;
+    justify-content: space-between;
+    font-size: small;
+}
+
+footer{
+    margin-top: 15px;
+   
+}
+
+
+
+}
