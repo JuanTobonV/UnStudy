@@ -66,6 +66,7 @@ main form #emailFormLogin, #passwordFormLogin, #botonFormLogin{
     height: 40px;
     border-radius: 8px;
 }
+
 #botonFormLogin{
     background-color: black;
     color: white;

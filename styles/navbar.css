@@ -19,6 +19,7 @@ nav{
     padding: 20px;
     text-decoration: none;
     background-color: #ececec;
+    z-index: 100;
 }
 
 .tituloImagen{
@@ -94,6 +95,8 @@ nav{
         transition: all 0.1s;
         background-color: #ececec;
         color: #0E0E0E;
+        z-index: 100;
+
     
     }
 
@@ -107,6 +110,7 @@ nav{
         transition: all 0.1s;
         background-color: #ececec;
         color: #0E0E0E;
+        
 
     }
     
@@ -124,6 +128,8 @@ nav{
 
     .navigation, .login{
         display: none;
+        z-index: 100;
+
     }
 
     .link:hover{
