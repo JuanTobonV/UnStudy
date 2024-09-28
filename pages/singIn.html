@@ -54,30 +54,45 @@
     </header>
     <!-- ----------------------------------------------------------------- -->
 
-    <main style="height: 70vh;" id="formLogin">
-
-        <div class="centradoLogin">
-            <h2>Inicia sesión</h2>
-            <p>Ingresa tu correo y contraseña</p>
-        </div>
-        <form action="Login" id="contenedorLogin">
-            <br><br>
-
-            <label class="box2">Correo electrónico</label><br>
-            <input type="email" name="email" id="emailFormLogin" required placeholder="Escribe tu E-mail"><br><br>
-
-            <label class="box2">Contraseña</label><br>
-            <input type="password" name="password" id="passwordFormLogin" required placeholder="Escribe tu Contraseña"><br><br>
-
-            <input type="submit" value="Iniciar sesion" id="botonFormLogin">
+    <main>
+        
+        <form action="">
+            <br>
+            <h3>Iniciar Sesión</h3>
+            <br>
+                    <!-- input para ingresar correo electronico en un formulario etiqueta password -->
+                    <label for="">Correo Electrónico</label>
+                    <br>
+                    <input type="email" name="" id="" placeholder="email" required>
+                    <br><br>
+    
+                    <!-- input para ingresar contraseñas en un formulario etiqueta password -->
+                    <label for="">Conttraseña</label>
+                    <br>
+                     <input type="password" name="" id="" placeholder="contraseña" required>
+                     <br><br>
+                     
+                     
+                     <!-- este boton verifica, hace un recargo de informacion, limpia lo que habia llenado, procesa la información y despues recarga la página -->
+                     <input type="submit" value="Iniciar Seción">
+                     <br><br>
+    
+                     <p class="registro">¿No tienes una cuenta? <span><a href="">Regístrate</a></span>
+                     </p>
+    
+    
         </form>
-        <div id="linkOlvido"> <a href="/pages/singUp.html"> Olvidé mi contraseña </a> </div>
-    </main> 
-
-    <!-- ---------------------------------------------------------------------------------- -->
-    <footer style="text-align: center;">
-        <p>© 2024 UnStudy. Todos los derechos reservados.</p>
-    </footer>
+        
+    
+        </main>
+    
+        <!-- ---------------------------------------------------------------------------------- -->
+        <footer>
+            <p id="derechos">© 2024 UnStudy. Todos los derechos reservados.</p>
+    
+        </footer>
+        <!-- ---------------------------------------------------------------------------------- -->
+    
     <!-- ---------------------------------------------------------------------------------- -->
     <script src="../js/main.js"></script>
 
