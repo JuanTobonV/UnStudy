@@ -234,6 +234,8 @@ footer{
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
+/* Primera medida es para dispositivos extra small, por ser una aplicación para estudiar no va ser muy utilizado por los usuarios, pero de igual manera se hizo con fines de practicar el responsive*/
+
 
 @media (width < 200px) {
 body{
@@ -246,23 +248,38 @@ nav{
     height: 20px;
 }
 main{
-    margin-top: 15px;
-    margin-bottom: 50px;
+    
+    margin-bottom: 200px;
 }
 form{
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
-    width: 175px;
+    width: 170px;
     height: 100px;
     justify-content: space-between;
     font-size: small;
 }
 
 footer{
-    margin-top: 15px;
+    
+    position: absolute;
+    top: 400px;
    
 }
 
+}
 
+
+/* Primera medida es para dispositivos pequeños small */
+
+@media (min-width:201) and (max-width:575px){
+    
+}
+/*segunda mediano es para dispositivos 576 a 768  medium*/
+@media(min-width:576px) and (max-width:768px){
+
+}
+/*tercero grande es para dispositivos pequeño 769 a 992  large*/
+@media(min-width:769px) and (max-width:992px){
 
 }
