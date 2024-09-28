@@ -1,82 +1,93 @@
 *{
-    margin: 0px;/* para quitar el espacio que trae por defecto y usar todo el espaco */
+    margin: 0px;/* para quitar el espacio que trae por defecto y usar todo el espacio */
     font-family: "Inter", sans-serif;/* para que quede el tipo de letra en todo el contenido del main */
-    
 }
 /* ----------------------------------------------------------------------------------------------- */
-
 main{
     flex-grow: 1;
 }
-
-
-
 /* --------------------------------------------------------------- */
-
-
-
 body{
     height: 100vh;
     /* para que ocupe el 100% del alto de la pantalla visible */
 }
-main{
-
-    
-    
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-form{
-    
-    display: flex;
-    width: 300px;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid rgb(206, 206, 206);
+#formLogin{
+    width: 400px;
+    height: 450px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px 0px rgb(206, 206, 206);
-    padding: 100px;
-
-    /* para separarlo del borde  */
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin: auto;
+    margin-top: 40px;
+    padding: 40px;
+    margin-bottom: 20px;
+    box-shadow:0 0 10px 0;
+    position: relative;
 }
-.registro {
+#linkARegistro{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 2%;
+    margin-right: 2%;
+    border-bottom: 1px solid black;
+    color: black;
+}
+#linkARegistro:hover{
+    font-size: 20px;
+}
+#linkOlvido{
+    text-align: center;
+    margin-top: 7%;
+    border-bottom: 1px solid black;
+}
+#linkOlvido a{
+    text-decoration: none;
+    color: black;
+}
+#linkOlvido a:hover{
+    font-size: 20px;
+}
+#contenedorLogin{
+    width: 100%;
+}
+.centradoLogin{
     text-align: center;
 }
-.registro a{
-    
-    text-decoration: none;
+main #tituloLogin{
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
 }
-.registro a:hover{
-    
-    color: grey;
-    border-bottom: 1px solid black;
-   
-}
-/* -------------------------------------------------------------------------------------- */
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main form #emailFormLogin, #passwordFormLogin, #botonFormLogin{
     width: 100%;
-    height: 100px;
-    background-color:  rgb(215, 215, 215);
+    height: 40px;
+    border-radius: 8px;
 }
-
-input{
-    height: 30px;
-}
-
-.submit{
+#botonFormLogin{
+    background-color: black;
+    color: white;
+    height: 35px;
+    border-radius: 10px;
+    transition: all 0.25s;
     cursor: pointer;
+    width: 100%;
+}
+#botonFormLogin:hover{
+    background-color: rgb(70, 70, 70);
+    font-size: 20px;
+}
+/* medida para mobiles */
+@media (max-width:575px){
+    #formLogin{
+        width: 300px;
+    }
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    background-color:  rgb(215, 215, 215);
+@media (min-width:576px) and (max-width:768px){
+    #formLogin{
+        width: 650px;
+    }
 }
